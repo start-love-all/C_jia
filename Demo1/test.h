@@ -10,11 +10,12 @@ public:
 	Test();
 
 	~Test();
+
 private:
 	int m_iVal;
 };
 
-class TestA
+class TestA :public Test
 {
 public:
 	TestA();
@@ -25,7 +26,7 @@ private:
 };
 
 
-class TestB
+class TestB :public TestA
 {
 public:
 	TestB();
