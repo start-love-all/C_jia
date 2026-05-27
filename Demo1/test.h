@@ -15,7 +15,7 @@ private:
 	int m_iVal;
 };
 
-class TestA :public Test
+class TestA :virtual public Test
 {
 public:
 	TestA();
@@ -26,7 +26,7 @@ private:
 };
 
 
-class TestB :public TestA
+class TestB :virtual public Test
 {
 public:
 	TestB();
@@ -37,7 +37,7 @@ private:
 };
 
 
-class TestC
+class TestC : public TestA , public TestB
 {
 public:
 	TestC();
