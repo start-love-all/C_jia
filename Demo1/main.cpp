@@ -5,7 +5,7 @@ int main()
 {
 	TestC m_obj;
 	cout << sizeof(m_obj) << endl;
-
+	cout <<" " << endl;
 	return 0;
 }
 #endif
